@@ -12,13 +12,10 @@ public class WordList
   {
     /* to be implemented in part (a) */
     int m = 0;
-    int n = 0;
     for(int i = 0; i<myList.size(); i++){
-    String str = myList.get(i);
-    if(str.length == len){
+    //String str = myList.get(i);
+    if(myList.get(i).length == len){
       m++;
-    }
-    n++;
   }
   return m;
   }
@@ -32,7 +29,7 @@ public class WordList
       myList.remove(j);
       j--;
     }
-    return myList;
+    System.out.print(myList);
     }
   }
 }
