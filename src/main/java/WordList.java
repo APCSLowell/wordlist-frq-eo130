@@ -23,9 +23,9 @@ public class WordList
   public void removeWordsOfLength(int len)
   {
     /* to be implemented in part (b) */
-    for(int j = 0; j<myList.size; j++){
-      String neutron = myList.get(j);
-      if(neutron.length == len)
+    for(int j = 0; j<myList.size(); j++){
+      String neutron = (String)myList.get(j);
+      if(neutron.length() == len)
       myList.remove(j);
       j--;
     }
